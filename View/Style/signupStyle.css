@@ -1,0 +1,128 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to right, #131921, #232f3e);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+
+
+.signup-container{
+    width:400px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.signup-container h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#131921;
+}
+
+
+
+.signup-container input{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+/* Focus effect */
+.signup-container input:focus{
+    border-color:#ff9900;
+    outline:none;
+    box-shadow:0 0 6px rgba(255,153,0,0.6);
+}
+
+
+.signup-container button{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    background:linear-gradient(45deg,#ff9900,#ff6600);
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.signup-container button:hover{
+    background:linear-gradient(45deg,#e68a00,#ff5500);
+    transform:scale(1.04);
+}
+
+
+
+.error{
+    color:#d8000c;
+    font-size:13px;
+    display:block;
+    margin-top:5px;
+}
+
+#usernameMsg,
+#emailMsg{
+    font-size:13px;
+    margin:3px 0 8px;
+}
+
+
+
+.password-box{
+    position:relative;
+    margin-top:10px;
+}
+
+.password-box input{
+    width:100%;
+    padding:12px;
+}
+
+
+.password-box span{
+    position:absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:16px;
+}
+
+
+
+input.valid{
+    border:1px solid green;
+}
+
+input.invalid{
+    border:1px solid red;
+}
+
+
+
+@media(max-width:480px){
+
+    .signup-container{
+        width:90%;
+        padding:20px;
+    }
+}
