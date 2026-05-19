@@ -1,0 +1,145 @@
+.cart-page,
+.checkout-page,
+.confirmation-page{
+    width:90%;
+    max-width:1100px;
+    margin:35px auto;
+    background:white;
+    padding:28px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.12);
+}
+
+.cart-page h2,
+.checkout-page h2,
+.confirmation-page h2{
+    margin-bottom:22px;
+}
+
+.cart-table{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.cart-row{
+    display:grid;
+    grid-template-columns:2fr 1fr 1.2fr 1fr 1fr;
+    gap:16px;
+    align-items:center;
+    padding:14px;
+    border:1px solid #e0e0e0;
+    border-radius:6px;
+}
+
+.cart-heading{
+    font-weight:bold;
+    background:#f7f7f7;
+}
+
+.cart-product{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.cart-product img,
+.confirmation-item img{
+    width:56px;
+    height:56px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+.qty-controls{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.qty-controls button,
+.cart-remove,
+.checkout-link,
+.checkout-page button{
+    border:none;
+    border-radius:5px;
+    padding:10px 14px;
+    cursor:pointer;
+}
+
+.qty-controls button{
+    background:#232f3e;
+    color:white;
+}
+
+.cart-remove{
+    background:#b00020;
+    color:white;
+}
+
+.cart-total{
+    margin-top:24px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:20px;
+    font-size:18px;
+}
+
+.checkout-link,
+.checkout-page button{
+    background:#ff9900;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.cart-empty a{
+    color:#ff9900;
+}
+
+.checkout-layout{
+    display:grid;
+    grid-template-columns:1fr 360px;
+    gap:28px;
+}
+
+.checkout-section{
+    margin-bottom:24px;
+}
+
+.checkout-section label{
+    display:block;
+    margin:10px 0;
+}
+
+.checkout-section textarea{
+    width:100%;
+    min-height:90px;
+    padding:12px;
+}
+
+.summary-item,
+.confirmation-item{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    border-bottom:1px solid #eee;
+    padding:10px 0;
+}
+
+.error{
+    color:#b00020;
+    margin-bottom:15px;
+}
+
+@media(max-width:800px){
+    .cart-row,
+    .checkout-layout{
+        grid-template-columns:1fr;
+    }
+
+    .cart-heading{
+        display:none;
+    }
+}
